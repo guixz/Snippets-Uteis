@@ -58,3 +58,11 @@ function myplguin_admin_page(){
   </div>
   <?php
 }
+
+// ===============================================================================
+// Redirecionar Perfil
+add_action( 'load-profile.php', function() {
+    if( ! current_user_can( 'manage_options' ) )
+        exit( wp_safe_redirect( admin_url() ) );
+} );
+// ===============================================================================
