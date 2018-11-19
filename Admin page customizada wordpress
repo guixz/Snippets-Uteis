@@ -66,3 +66,25 @@ add_action( 'load-profile.php', function() {
         exit( wp_safe_redirect( admin_url() ) );
 } );
 // ===============================================================================
+// DAQUI PARA BAIXO SÓ DEUS SABE COMO FUNCIONA
+// ===============================================================================
+add_action( 'wp_head', 'my_header_scripts' );
+function my_header_scripts(){
+  ?>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://vipreseller14.net/~demopage/wp-content/themes/astra/assets/js/mask.js"></script>
+         <script type="text/javascript">
+
+         	$(document).ready(function(){
+  $('#cep').mask('00000-000');
+  $('#Telefone').mask('(00) Z0000-0000', {translation:  {'Z': {pattern: /[0-9]/, optional: true}}});
+
+});
+ 
+         </script>
+
+<?php
+}
