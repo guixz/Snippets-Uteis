@@ -1,0 +1,15 @@
+===VAI NO FUNCTIONS/olha o $src===
+
+function add_custom_script() {
+    wp_register_script('custom_script', home_url() . '$src', array( 'jquery' ));
+    wp_enqueue_script('custom_script');
+}  
+add_action( 'wp_enqueue_scripts', 'add_custom_script' );
+
+====SCRIPT VAI NO HEADER====
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+  $('#cep').mask('00000-000');
+  $('#telefone').mask('(00) Z0000-0000', {translation:  {'Z': {pattern: /[0-9]/, optional: true}}});
+
+});
