@@ -6,10 +6,10 @@ function add_custom_script() {
 }  
 add_action( 'wp_enqueue_scripts', 'add_custom_script' );
 
-====SCRIPT VAI NO HEADER====
+====SCRIPT VAI NO HEADER | ANTES DO HEAD====
 <script type="text/javascript">
   jQuery(document).ready(function($){
   $('#cep').mask('00000-000');
   $('#telefone').mask('(00) Z0000-0000', {translation:  {'Z': {pattern: /[0-9]/, optional: true}}});
-
-});
+  $('.cnpj').mask('00.000.000/0000-00', {reverse: true});
+});</script>
