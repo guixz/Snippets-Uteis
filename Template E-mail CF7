@@ -1,0 +1,70 @@
+<style>
+.th-1 th{
+    background-color: #ff9d00;
+    border: solid 1px #fabc3c;
+    color: #23231a;
+    padding: 10px;
+    text-align: center;
+}
+.th-2 th{
+    background-color: #ffd275;
+    border: solid 1px #fabc3c;
+    color: #23231a;
+    padding: 10px;
+    text-align: left;
+    }
+tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+}
+table{
+    border: solid 1px #fabc3c;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+</style>
+<table width="400px">
+	<thead class="th-1">
+		<th colspan="2">Dados do Cliente</th>
+	</thead>
+	<thead class="th-2">
+		<th>Nome</th>
+		<th>Telefone</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>[nome]</td>
+			<td>[tel-414]</td>
+		</tr>
+		<thead class="th-2">
+			<th colspan="2">E-mail</th>
+		</thead>
+		<td colspan="2">[email2]</td>
+		<thead class="th-1">
+			<th colspan="2">Dados da Empresa</th>
+		</thead>
+		<thead class="th-2">
+			<th colspan="2">Nome</th>
+		</thead>
+		<tr>
+			<td colspan="2">[empresa]</td>
+		</tr>
+		<thead class="th-2">
+			<th>CNPJ</th>
+			<th>I.E</th>
+		</thead>
+		<tr>
+			<td>[cnpj]</td>
+			<td>[inscricao]</td>
+			<thead class="th-2">
+				<th>Cidade</th>
+				<th>Estado</th>
+			</thead>
+			<tr>
+				<td>[Cidade]</td>
+				<td>[uf]</td>
+			</tr>
+		</tbody>
+	</table>
