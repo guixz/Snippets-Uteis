@@ -1,0 +1,7 @@
+<style>
+.footer-link{color: white}
+.footer-link:hover{color:red;}
+
+</style>
+<div style="text-align:center;background:black;">
+<a href="http://prismatag.com.br/" class="footer-link">Desenvolvido por<br><img src="https://prismatag.com.br/wp-content/uploads/2017/10/logo-prisma.png" width="90"></a></div>
