@@ -1,2 +1,1 @@
-imapsync --host1 srv.origem.com  --user1 user01@exemple.com --password1 pwd_exemple \
- --host2 srv.dest.com --user2 user1@exemple.com --password2 pwd_exemple
+imapsync --host 1 nameserver/IP  --user1 endereçoDoEmail --password1 senha --host 2 nameserver/IP  --user2 endereçoDoEmail --password2 senha
