@@ -1,3 +1,11 @@
+COMO USAR:
+
+Insira esse código PHP como algum plugin.
+Na linha 17, troque de "'post_id' => 8," para "'post_id' => ID DO POST QUE VOCÊ QUER EDITAR,"
+Na linha 24, troque de "field_groups' => false," para "field_groups' => array(ID DOS GRUPOS DO ACF),".
+
+CÓDIGO ABAIXO:
+
 <?php acf_form_head(); ?>
 <?php $settings = array(
 
