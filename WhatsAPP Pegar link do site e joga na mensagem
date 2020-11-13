@@ -1,0 +1,13 @@
+<div class="flex">
+  <div>
+    <p>
+      After you click the following button, and assuming it's a valid number (on JavaScript),
+      you would be redirected to WhatsApp with the message <i>Hello! Thanks for contacting us! -- URL: https://jsfiddle.net/etc</i>:
+    </p>
+    <a class="whatsapp-link" href="#">WhatsApp</a>
+  </div>
+</div>
+
+<script>const link = document.querySelector('.whatsapp-link');
+const msg = encodeURIComponent(`Hello! Thanks for contacting us! -- URL: ${encodeURI(window.location.href)}`);
+link.href = `https://api.whatsapp.com/send?phone=the_phone_number&text=${msg}`;</script>
